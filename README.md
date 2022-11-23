@@ -12,8 +12,8 @@ After I designed the circuit in Eagle I etched a proto board up. I used some Ard
 The code to run the the LCD with Shift register needs the LCD3Wire Library found Here on the Arduino playground. If you load up the LCD3Wire Example you only need to make a few adjustments to the pinouts.
 
 Standard Library Pins
-'
-// Arduino pins
+
+`// Arduino pins
 #define LCD_LINES 1  // number of lines in your display
 #define DOUT_PIN  11  // Dout pin
 #define STR_PIN   12  // Strobe pin
@@ -23,6 +23,6 @@ Modified Library Pins
 #define LCD_LINES 2  // number of lines in your display
 #define DOUT_PIN  3  // Dout pin
 #define STR_PIN   2  // Strobe pin
-#define CLK_PIN   4  // Clock pin
-'
+#define CLK_PIN   4  // Clock pin`
+
 Upload the sketch to your Arduino and you should see the example array streaming through the data.
